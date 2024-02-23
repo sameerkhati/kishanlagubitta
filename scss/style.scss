@@ -1,0 +1,118 @@
+$brand:#0b4da2;
+.top
+{
+    background:$brand;
+    border-radius:0 0 6px 6px;
+    font-size:14px;
+}
+h1,h2,h3,h4,h5,h6 
+{
+    font-weight: bold;
+}
+@media(min-width:1200px){
+    .container{max-width:1290px;}
+}
+.bg-body-tertiary
+{
+    background:$brand !important;
+}
+.navbar-expand-lg .navbar-nav .nav-link
+{
+    color:#fff;
+    padding:10px 15px;
+}
+.menu
+{
+    position:relative;
+    bottom:-30px;
+    z-index: 999;
+}
+.carousel-caption
+{
+    bottom:200px;
+    left:130px;
+    text-align:left;
+    h5 
+    {
+        font-size:45px;
+    }
+}
+.services
+{
+    position:relative;
+    top:-40px;
+    .bg-body-secondary
+{
+    &:hover
+    {
+        background:$brand !important;
+        color:#fff;
+     p 
+     {
+        color:#fff !important;
+     }
+    }
+}
+}
+.card-header
+{
+    background:$brand;
+    color:#fff;
+}
+.team
+{
+    background:linear-gradient(black 50%,red 50%);
+    min-height:550px;
+}
+.teambox
+{
+    position:relative;
+    overflow:hidden;
+    &:hover
+    {
+        &::after
+        {
+            left:200%;
+        }
+    }
+}
+.teambox::after{
+    content:'';
+    width:100px;
+    height:100%;
+    background:green;
+    left:-100%;
+    top:0;
+    position:absolute;
+    transform:skewX(-30deg);
+    transition:0.9s;
+    
+
+}
+.information
+{
+    background:url(https://www.kisanlaghubitta.com.np/frontend/images/footer-dot-pic-2.png) $brand;
+    color:#fff;
+    background-repeat:no-repeat;
+
+}
+.info 
+{
+   list-style:none;
+    li
+    {
+        border-bottom: 
+        1px solid #fff;
+        line-height:40px;
+        &:last-child
+        {
+            border:none;
+        }
+    }
+}
+.copyright
+{
+    background:$brand;
+    border-top:1px solid #ccc;
+    
+}
